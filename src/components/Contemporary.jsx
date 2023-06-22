@@ -1,5 +1,6 @@
 import React from "react";
 import contemporaryvideo from "../contemporaryvideo.mp4";
+import "../styles/Contemporary.scss"
 
 function Contemporary () {
 

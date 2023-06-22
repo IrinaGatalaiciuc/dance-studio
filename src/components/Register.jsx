@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import "../styles/Register.scss"
 
 function Register() {
     const nameRef = useRef();

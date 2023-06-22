@@ -1,0 +1,679 @@
+@mixin flex($dir) {
+  display: flex;
+  flex-direction: $dir;
+}
+
+.ballroom {
+
+    video {
+      margin: 0 300px 0 300px;
+      height: 300px;
+      width: 700px;
+      object-fit: cover;
+    }
+  
+    .about-ballroom {
+      width: 90%;
+      margin: 40px;
+      .text-ballroom {
+        h2 {
+          font-size: 110%;
+        }
+  
+        p {
+          font-size: 110%;
+        }
+      }
+    }
+  
+    .types {
+      @include flex(row);
+      align-items: flex-start;
+      justify-content: center;
+  
+      .tango {
+        img {
+          height: 400px;
+          width: 300px;
+          object-fit: cover;
+          margin-left: 110px;
+          border-radius: 20px;
+          border: 3px solid black;
+        }
+      }
+  
+      .texts {
+        @include flex(row);
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+  
+        .passion {
+          font-size: 190%;
+          font-weight: 150%;
+          margin-top: 100px;
+          margin-bottom: 50px;
+        }
+  
+        .slow {
+          font-size: 190%;
+          font-weight: 150%;
+          margin-top: 150px;
+          margin-left: 30px;
+        }
+      }
+  
+      .waltz {
+        img {
+          height: 400px;
+          width: 300px;
+          object-fit: cover;
+          margin-right: 110px;
+          border-radius: 20px;
+          border: 3px solid black;
+        }
+      }
+    }
+  
+    .lessons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 10px 40px 25px 170px;
+  
+      .group {
+        @include flex(column);
+  
+        h4 {
+          font-size: 130%;
+          margin-bottom: 15px;
+        }
+  
+        ul {
+  
+          li {
+            font-size: 120%;
+  
+          }
+        }
+      }
+  
+      .indiv {
+        @include flex(column);
+  
+        h4 {
+          font-size: 130%;
+          margin-bottom: 15px;
+        }
+  
+        ul {
+  
+          li {
+            font-size: 120%;
+  
+          }
+        }
+      }
+    }
+  
+    h3 {
+      font-size: 140%;
+      text-align: center;
+      margin: 20px 30px 0px -110px;
+    }
+    .uniforms {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 20px 30px 35px 170px;
+     
+      
+      .forgirls {
+        @include flex(column);
+  
+        h5 {
+          font-size: 130%;
+          margin-bottom: 15px;
+        }
+  
+        ul {
+  
+          li {
+            list-style-type: square;
+            font-size: 120%;
+  
+          }
+        }
+      }
+  
+      .forboys {
+        @include flex(column);
+  
+        h5 {
+          font-size: 130%;
+          margin-bottom: 15px;
+        }
+  
+        ul {
+  
+          li {
+            list-style-type: square;
+            font-size: 120%;
+  
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1250px) {
+    .ballroom {
+  
+      video {
+        margin: 0 200px 0 200px;
+        height: 300px;
+        width: 700px;
+        object-fit: cover;
+      }
+    
+      .about-ballroom {
+   
+        .text-ballroom {
+    width: 80%;
+    margin: 15px auto;
+          h2 {
+            font-size: 110%;
+          }
+    
+          p {
+            font-size: 110%;
+          }
+        }
+      }
+    
+      .types {
+        @include flex(row);
+        align-items: flex-start;
+        justify-content: center;
+    
+        .tango {
+          img {
+            height: 350px;
+            width: 250px;
+            object-fit: cover;
+            margin-left: 110px;
+            border-radius: 20px;
+            border: 3px solid black;
+          }
+        }
+    
+        .texts {
+          @include flex(row);
+          align-items: center;
+          justify-content: center;
+          margin: 10px auto;
+    
+          .passion {
+            font-size: 190%;
+            font-weight: 150%;
+            margin-top: 100px;
+            margin-bottom: 50px;
+    
+    
+          }
+    
+          .slow {
+            font-size: 190%;
+            font-weight: 150%;
+            margin-top: 150px;
+            margin-left: 30px;
+          }
+        }
+    
+        .waltz {
+          img {
+            height: 400px;
+            width: 300px;
+            object-fit: cover;
+            margin-right: 110px;
+            border-radius: 20px;
+            border: 3px solid black;
+          }
+        }
+      }
+    
+      .lessons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px 40px 25px 170px;
+    
+        .group {
+          @include flex(column);
+    
+          h4 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              font-size: 120%;
+    
+            }
+          }
+        }
+    
+        .indiv {
+          @include flex(column);
+    
+          h4 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              font-size: 120%;
+    
+            }
+          }
+        }
+    
+    
+    
+      }
+    
+      h3 {
+        font-size: 140%;
+        text-align: center;
+        margin: 20px 30px 0px -110px;
+      }
+      .uniforms {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px 0 35px 100px;
+       
+        
+        .forgirls {
+          @include flex(column);
+    
+          h5 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              list-style-type: square;
+              font-size: 110%;
+    
+            }
+          }
+        }
+    
+        .forboys {
+          @include flex(column);
+    
+          h5 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              list-style-type: square;
+              font-size: 110%;
+    
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  @media (max-width: 900px) {
+    .ballroom {
+  
+      video {
+        margin: 0 100px 0 100px;
+        height: 300px;
+        width: 600px;
+        object-fit: cover;
+      }
+    
+      .about-ballroom {
+    width: 80%;
+        .text-ballroom {
+    
+          h2 {
+            font-size: 130%;
+          }
+    
+          p {
+            font-size: 120%;
+          }
+        }
+      }
+    
+      .types {
+        @include flex(row);
+        align-items: flex-start;
+        justify-content: center;
+    
+        .tango {
+          img {
+            height: 350px;
+            width: 230px;
+            object-fit: cover;
+            margin-left: 130px;
+            border-radius: 20px;
+            border: 3px solid black;
+          }
+        }
+    
+        .texts {
+          @include flex(row);
+          align-items: center;
+          justify-content: center;
+          margin: 10px auto;
+    
+          .passion {
+            font-size: 190%;
+            font-weight: 150%;
+            margin: 100px 0 50px 10px;
+    
+          }
+    
+          .slow {
+            font-size: 190%;
+            font-weight: 150%;
+            margin: 150px 15px 0 20px;
+          }
+        }
+    
+        .waltz {
+          img {
+            height: 350px;
+            width: 230px;
+            object-fit: cover;
+            margin-right: 110px;
+            border-radius: 20px;
+            border: 3px solid black;
+          }
+        }
+      }
+    
+      .lessons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px 40px 25px 170px;
+    
+        .group {
+          @include flex(column);
+    
+          h4 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              font-size: 120%;
+    
+            }
+          }
+        }
+    
+        .indiv {
+          @include flex(column);
+    
+          h4 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              font-size: 120%;
+    
+            }
+          }
+        }
+    
+    
+    
+      }
+    
+      h3 {
+        font-size: 140%;
+        text-align: center;
+        margin: 20px 30px 0px -110px;
+      }
+      .uniforms {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px 15px 45px 100px;
+       
+        
+        .forgirls {
+          @include flex(column);
+    
+          h5 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              list-style-type: square;
+              font-size: 110%;
+              width: 270px;
+    
+            }
+          }
+        }
+    
+        .forboys {
+          @include flex(column);
+    
+          h5 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              list-style-type: square;
+              font-size: 110%;
+              width: 270px;
+    
+            }
+          }
+        }
+    
+    
+    
+      }
+    }
+    
+   
+  }
+
+
+  @media (max-width: 650px) {
+    .ballroom {
+  
+      video {
+        margin: 0 20px 0 20px;
+        height: 200px;
+        width: 550px;
+        object-fit: cover;
+      }
+    
+      .about-ballroom {
+    height: 300px;
+        .text-ballroom {
+    
+          h2 {
+            font-size: 110%;
+          }
+    
+          p {
+            font-size: 110%;
+          }
+        }
+      }
+    
+      .types {
+        @include flex(row);
+        align-items: flex-start;
+        justify-content: center;
+    
+        .tango {
+          img {
+            height: 220px;
+            width: 200px;
+            object-fit: cover;
+            margin-left: 10px;
+            border-radius: 20px;
+            border: 3px solid black;
+          }
+        }
+    
+        .texts {
+          @include flex(row);
+          align-items: center;
+          justify-content: center;
+          margin: 10px auto;
+    
+          .passion {
+            font-size: 150%;
+            font-weight: 150%;
+            margin-top: 100px;
+            margin-bottom: 50px;
+    
+    
+          }
+    
+          .slow {
+            font-size: 150%;
+            font-weight: 150%;
+            margin-top: 150px;
+            margin-left: 30px;
+          }
+        }
+    
+        .waltz {
+          img {
+            height: 220px;
+            width: 200px;
+            object-fit: cover;
+            margin-right: 10px;
+            border-radius: 20px;
+            border: 3px solid black;
+          }
+        }
+      }
+    
+      .lessons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px 40px 25px 170px;
+    
+        .group {
+          @include flex(column);
+    
+          h4 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              font-size: 120%;
+    
+            }
+          }
+        }
+    
+        .indiv {
+          @include flex(column);
+    
+          h4 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              font-size: 120%;
+    
+            }
+          }
+        }
+    
+    
+    
+      }
+    
+      h3 {
+        font-size: 140%;
+        text-align: center;
+        margin: 20px 30px 0px -110px;
+      }
+      .uniforms {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px 30px 35px 170px;
+       
+        
+        .forgirls {
+          @include flex(column);
+    
+          h5 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              list-style-type: square;
+              font-size: 120%;
+    
+            }
+          }
+        }
+    
+        .forboys {
+          @include flex(column);
+    
+          h5 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              list-style-type: square;
+              font-size: 120%;
+    
+            }
+          }
+        }
+    
+    
+    
+      }
+    }
+  }

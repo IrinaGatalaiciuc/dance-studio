@@ -1,4 +1,4 @@
-
+import "../styles/Kpop.scss"
 import kpopvideo from "../kpopvideo.mp4";
 
 function Kpop () {

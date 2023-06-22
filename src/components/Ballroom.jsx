@@ -1,5 +1,6 @@
 import React from "react";
 import ballroomvideo from "../ballroomvideo.mp4";
+import "../styles/Ballroom.scss"
 
 function Ballroom() {
 

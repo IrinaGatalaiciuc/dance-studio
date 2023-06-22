@@ -1,6 +1,6 @@
 
 import balletvideo from "../ballet-video.mp4";
-
+import "../styles/Ballet.scss"
 
 function Ballet() {
 

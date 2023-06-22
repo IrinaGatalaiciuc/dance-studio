@@ -1,0 +1,213 @@
+@mixin flex($dir) {
+    display: flex;
+    flex-direction: $dir;
+  }
+
+  .teachers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: white;
+  
+    .teacher {
+      @include flex(column);
+      align-items: flex-start;
+      justify-content: flex-start;
+      height: 420px;
+      width: 250px;
+      margin: 25px 10px 10px 50px;
+  
+      &:hover {
+        border: 2px solid black;
+        border-radius: 5px;
+      }
+  
+      img {
+        width: 75%;
+        height: 50%;
+        object-fit: cover;
+        margin: 7px 30px 10px 30px;
+        border: 1px solid black;
+  
+      }
+  
+      h3 {
+        font-size: 140%;
+        color: black;
+        margin: 5px auto;
+        margin-bottom: -5px;
+      }
+  
+      h5 {
+        font-size: 110%;
+        color: black;
+        margin: 12px auto;
+      }
+  
+      p {
+        font-size: 115%;
+        color: black;
+        margin-left: 10px;
+      }
+    }
+  }
+
+
+  @media (max-width: 1250px) {
+    .teachers {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: white;
+      
+      
+        .teacher {
+          @include flex(column);
+          align-items: flex-start;
+          justify-content: flex-start;
+          height: 430px;
+          width: 200px;
+          margin: 10px 10px 10px 10px;
+      
+          &:hover {
+            border: 2px solid black;
+            border-radius: 5px;
+          }
+      
+          img {
+            width: 75%;
+            height: 48%;
+            object-fit: cover;
+            margin: 7px 30px 10px 30px;
+            border: 1px solid black;
+      
+          }
+      
+          h3 {
+            font-size: 140%;
+            color: black;
+            margin: 5px auto;
+            margin-bottom: -5px;
+          }
+      
+          h5 {
+            font-size: 110%;
+            color: black;
+            margin: 12px auto;
+          }
+      
+          p {
+            font-size: 115%;
+            color: black;
+            margin-left: 10px;
+          }
+      
+        }
+      
+      }
+  }
+
+@media (max-width: 900px) {
+    .teachers {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: white;
+      
+      
+        .teacher {
+          @include flex(column);
+          align-items: flex-start;
+          justify-content: flex-start;
+          height: 450px;
+          width: 200px;
+          margin: 30px 0px 10px 30px;
+      
+          &:hover {
+            border: 2px solid black;
+            border-radius: 5px;
+          }
+      
+          img {
+            width: 75%;
+            height: 45%;
+            object-fit: cover;
+            margin: 7px 30px 10px 30px;
+            border: 1px solid black;
+      
+          }
+      
+          h3 {
+            font-size: 140%;
+            color: black;
+            margin: 0 40px -5px 20px;
+            width: 90%;
+            
+          }
+      
+          h5 {
+            font-size: 110%;
+            color: black;
+            margin: 12px auto;
+          }
+      
+          p {
+            font-size: 115%;
+            color: black;
+            margin-left: 10px;
+          }
+      
+        }
+      
+      }
+}
+
+  @media (max-width: 650px) {
+    .teachers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: white;
+      
+      
+        .teacher {
+          @include flex(column);
+          align-items: flex-start;
+          justify-content: flex-start;
+          height: 420px;
+          width: 250px;
+          margin: 25px 10px 10px 50px;
+      
+          &:hover {
+            border: 2px solid black;
+            border-radius: 5px;
+          }
+      
+          img {
+            width: 75%;
+            height: 50%;
+            object-fit: cover;
+            margin: 7px 30px 10px 30px;
+            border: 1px solid black;
+      
+          }
+      
+          h3 {
+            font-size: 140%;
+            color: black;
+            margin: 5px auto;
+            margin-bottom: -5px;
+          }
+      
+          h5 {
+            font-size: 110%;
+            color: black;
+            margin: 12px auto;
+          }
+      
+          p {
+            font-size: 115%;
+            color: black;
+            margin-left: 10px;
+          }
+      
+        }
+      
+      }
+  }

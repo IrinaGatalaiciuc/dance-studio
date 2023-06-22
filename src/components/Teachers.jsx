@@ -1,3 +1,5 @@
+import "../styles/Teachers.scss"
+
 function Teachers () {
 
     return (

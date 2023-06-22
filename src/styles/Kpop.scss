@@ -1,0 +1,542 @@
+@mixin flex($dir) {
+  display: flex;
+  flex-direction: $dir;
+}
+
+.kpop {
+
+    video {
+      margin: 0 300px 0 300px;
+      height: 300px;
+      width: 700px;
+      object-fit: cover;
+    }
+  
+    .about-kpop {
+      @include flex(row);
+      justify-content: center;
+      align-items: flex-start;
+  height: 320px;
+  width: 80%;
+  margin: 40px auto;
+  border-bottom: 2px solid black;
+      img {
+        height: 300px;
+        width: 260px;
+        object-fit: cover;
+      }
+  
+      .text-kpop {
+  margin-left: 50px;
+  width: 40%;
+  
+        h2 {
+          font-size: 150%;
+          margin-bottom: 20px;
+        }
+  
+        p {
+          font-size: 110%;
+        }
+      }
+    }
+  
+  
+    .lessons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 10px 40px 25px 170px;
+  
+      .group {
+        @include flex(column);
+  
+        h4 {
+          font-size: 130%;
+          margin-bottom: 15px;
+        }
+  
+        ul {
+  
+          li {
+            font-size: 120%;
+  
+          }
+        }
+      }
+  
+      .indiv {
+        @include flex(column);
+  
+        h4 {
+          font-size: 130%;
+          margin-bottom: 15px;
+        }
+  
+        ul {
+  
+          li {
+            font-size: 120%;
+  
+          }
+        }
+      }
+    }
+    h3 {
+      font-size: 140%;
+      text-align: center;
+      margin: 20px 30px 0px -110px;
+    }
+    .uniforms {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 20px 30px 35px 170px;
+     
+      
+      .forgirls {
+        @include flex(column);
+  
+        h5 {
+          font-size: 130%;
+          margin-bottom: 15px;
+        }
+  
+        ul {
+  
+          li {
+            list-style-type: square;
+            font-size: 120%;
+  
+          }
+        }
+      }
+  
+      .forboys {
+        @include flex(column);
+  
+        h5 {
+          font-size: 130%;
+          margin-bottom: 15px;
+        }
+  
+        ul {
+  
+          li {
+            list-style-type: square;
+            font-size: 120%;
+  
+          }
+        }
+      }
+    }
+  
+  }
+
+  @media (max-width: 1250px) {
+    .kpop {
+  
+      video {
+        margin: 0 200px 0 200px;
+        height: 300px;
+        width: 700px;
+        object-fit: cover;
+      }
+    
+      .about-kpop {
+        @include flex(row);
+        justify-content: center;
+        align-items: flex-start;
+    height: 320px;
+    width: 80%;
+    margin: 40px auto;
+    border-bottom: 2px solid black;
+        img {
+          height: 300px;
+          width: 260px;
+          object-fit: cover;
+        }
+    
+        .text-kpop {
+    margin-left: 50px;
+    width: 40%;
+    
+          h2 {
+            font-size: 150%;
+            margin-bottom: 20px;
+          }
+    
+          p {
+            font-size: 110%;
+          }
+        }
+      }
+    
+    
+      .lessons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px 40px 25px 170px;
+    
+        .group {
+          @include flex(column);
+    
+          h4 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              font-size: 120%;
+    
+            }
+          }
+        }
+    
+        .indiv {
+          @include flex(column);
+    
+          h4 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              font-size: 120%;
+    
+            }
+          }
+        }
+    
+    
+    
+      }
+      h3 {
+        font-size: 140%;
+        text-align: center;
+        margin: 20px 30px 0px -110px;
+      }
+      .uniforms {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px 0 35px 100px;
+       
+        
+        .forgirls {
+          @include flex(column);
+    
+          h5 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              list-style-type: square;
+              font-size: 110%;
+    
+            }
+          }
+        }
+    
+        .forboys {
+          @include flex(column);
+    
+          h5 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              list-style-type: square;
+              font-size: 110%;
+    
+            }
+          }
+        }
+    
+    
+    
+      }
+    
+    }
+
+  }
+
+  @media (max-width: 900px) {
+
+    .kpop {
+  
+      video {
+        margin: 0 100px 0 100px;
+        height: 300px;
+        width: 600px;
+        object-fit: cover;
+      }
+    
+      .about-kpop {
+        @include flex(row);
+        justify-content: center;
+        align-items: flex-start;
+    height: 430px;
+    width: 80%;
+    margin: 40px auto;
+    border-bottom: 2px solid black;
+        img {
+          height: 300px;
+          width: 260px;
+          object-fit: cover;
+        }
+    
+        .text-kpop {
+    margin-left: 50px;
+    width: 40%;
+    
+          h2 {
+            font-size: 150%;
+            margin-bottom: 20px;
+          }
+    
+          p {
+            font-size: 110%;
+          }
+        }
+      }
+    
+    
+      .lessons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px 40px 25px 170px;
+    
+        .group {
+          @include flex(column);
+    
+          h4 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              font-size: 120%;
+    
+            }
+          }
+        }
+    
+        .indiv {
+          @include flex(column);
+    
+          h4 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              font-size: 120%;
+    
+            }
+          }
+        }
+    
+    
+    
+      }
+      h3 {
+        font-size: 140%;
+        text-align: center;
+        margin: 20px 30px 0px -110px;
+      }
+      .uniforms {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px 15px 35px 100px;
+       
+        
+        .forgirls {
+          @include flex(column);
+    
+          h5 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              list-style-type: square;
+              font-size: 110%;
+              width: 270px;
+    
+            }
+          }
+        }
+    
+        .forboys {
+          @include flex(column);
+    
+          h5 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              list-style-type: square;
+              font-size: 110%;
+              width: 270px;
+    
+            }
+          }
+        }
+      }
+    
+    }
+  }
+
+
+  @media (max-width: 650px) {
+    .kpop {
+  
+      video {
+        margin: 0 20px 0 20px;
+        height: 200px;
+        width: 550px;
+        object-fit: cover;
+      }
+    
+      .about-kpop {
+        @include flex(row);
+        justify-content: center;
+        align-items: flex-start;
+    height: 320px;
+    width: 80%;
+    margin: 40px auto;
+    border-bottom: 2px solid black;
+        img {
+          height: 300px;
+          width: 260px;
+          object-fit: cover;
+        }
+    
+        .text-kpop {
+    margin-left: 50px;
+    width: 40%;
+    
+          h2 {
+            font-size: 150%;
+            margin-bottom: 20px;
+          }
+    
+          p {
+            font-size: 110%;
+          }
+        }
+      }
+    
+    
+      .lessons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px 40px 25px 170px;
+    
+        .group {
+          @include flex(column);
+    
+          h4 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              font-size: 120%;
+    
+            }
+          }
+        }
+    
+        .indiv {
+          @include flex(column);
+    
+          h4 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              font-size: 120%;
+    
+            }
+          }
+        }
+    
+    
+    
+      }
+      h3 {
+        font-size: 140%;
+        text-align: center;
+        margin: 20px 30px 0px -110px;
+      }
+      .uniforms {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px 30px 35px 170px;
+       
+        
+        .forgirls {
+          @include flex(column);
+    
+          h5 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              list-style-type: square;
+              font-size: 120%;
+    
+            }
+          }
+        }
+    
+        .forboys {
+          @include flex(column);
+    
+          h5 {
+            font-size: 130%;
+            margin-bottom: 15px;
+          }
+    
+          ul {
+    
+            li {
+              list-style-type: square;
+              font-size: 120%;
+    
+            }
+          }
+        }
+    
+    
+    
+      }
+    
+    }
+  }

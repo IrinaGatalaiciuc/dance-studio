@@ -1,0 +1,189 @@
+@mixin flex($dir) {
+  display: flex;
+  flex-direction: $dir;
+}
+
+.reg-form {
+    background-color: white;
+    height: 500px;
+    width: 100%;
+  
+    .register {
+      h1 {
+        text-align: center;
+      }
+  
+      input,
+      select {
+        margin-left: 200px;
+        height: 19px;
+        width: 240px;
+        margin-bottom: 3px;
+      }
+  
+      textarea {
+        margin-left: 200px;
+        min-width: 240px;
+        min-height: 150px;
+  
+      }
+  
+      button {
+        background-color: #6aaaad;
+        color: black;
+        margin-left: 200px;
+      }
+    }
+  
+    .result {
+  
+      p {
+        font-size: 140%;
+  
+      }
+    }
+  
+  }
+
+  
+
+  @media (max-width: 1250px) {
+    .reg-form {
+    
+      height: 500px;
+      width: 100%;
+    
+      .register {
+    
+        h1 {
+          text-align: center;
+        }
+    
+        input,
+        select {
+          margin-left: 200px;
+          height: 19px;
+          width: 240px;
+          margin-bottom: 3px;
+        }
+    
+        textarea {
+          margin-left: 200px;
+          min-width: 240px;
+          min-height: 150px;
+    
+        }
+    
+        button {
+          background-color: #6aaaad;
+          color: black;
+          margin-left: 200px;
+        }
+      }
+    
+      .result {
+    
+        p {
+          font-size: 140%;
+    
+        }
+      }
+    
+    }
+
+  }
+
+
+  @media (max-width: 900px) {
+    .reg-form {
+    
+      height: 520px;
+      width: 100%;
+    
+      .register {
+    
+        h1 {
+          text-align: center;
+        }
+    
+        input,
+        select {
+          margin-left: 200px;
+          height: 23px;
+          width: 240px;
+          margin-bottom: 5px;
+        }
+    
+        textarea {
+          margin-left: 200px;
+          min-width: 240px;
+          min-height: 170px;
+    
+        }
+    
+        button {
+          background-color: #6aaaad;
+          color: black;
+          margin-left: 200px;
+          height: 25px;
+          width: 100px;
+        }
+      }
+    
+      .result {
+    
+        p {
+          font-size: 160%;
+    
+        }
+      }
+    
+    }
+    
+  }
+
+
+  @media (max-width: 650px) {
+    .reg-form {
+    
+      height: 500px;
+      width: 100%;
+    
+      .register {
+    
+        h1 {
+          text-align: center;
+        }
+    
+        input,
+        select {
+          margin-left: 200px;
+          height: 19px;
+          width: 240px;
+          margin-bottom: 3px;
+        }
+    
+        textarea {
+          margin-left: 200px;
+          min-width: 240px;
+          min-height: 150px;
+    
+        }
+    
+        button {
+          background-color: #6aaaad;
+          color: black;
+          margin-left: 200px;
+        }
+      }
+    
+      .result {
+    
+        p {
+          font-size: 140%;
+    
+        }
+      }
+    
+    }
+  }

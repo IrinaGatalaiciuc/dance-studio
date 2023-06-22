@@ -1,5 +1,6 @@
 import React from "react";
 import nationalvideo from "../nationalvideo.mp4";
+import "../styles/National.scss"
 
 function National () {
 

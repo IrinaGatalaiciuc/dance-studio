@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import './App.scss';
 import Main from "./components/Main";
 import Dances from "./components/Dances";
 import Ballet from "./components/Ballet";

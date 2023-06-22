@@ -1,5 +1,6 @@
 import React from "react";
 import hiphopvideo from "../hiphopvideo.mp4";
+import "../styles/Hiphop.scss"
 
 function Hiphop () {
 
